@@ -16,6 +16,12 @@ gem 'devise', '~> 4.7', '>= 4.7.3'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'sqlite3', '~> 1.4'
+end
+
+group :production do
+	gem 'pg', '~> 1.2', '>= 1.2.3'
+	#gem 'rails_12factor'. '0.0.2'
 end
 
 group :development do
